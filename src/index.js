@@ -1,17 +1,13 @@
 require('./models/Vaccine');
-require('./models/User');
 const express = require('express');
 const mongoose = require('mongoose');
 
-const authRoutes = require('./routes/authRoutes');
-const requireAuth = require('./middlewares/requireAuth');
 const bodyParser = require('body-parser');
 const VaccineRoutes = require('./routes/vaccineRoutes');
 
 const app = express();
 
 app.use(bodyParser.json());
-app.use(authRoutes);
 app.use(VaccineRoutes);
 
 
