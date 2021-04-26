@@ -15,11 +15,11 @@ const vaccineSchema = new mongoose.Schema({
         type: String,
         default: ''
     },
-    age: {
+    average_per_dose: {
         type: Number,
         default: 0,
         min: 0,
-        max: 100
+        max: 4000
     },
     performance: {
         type: Number,
