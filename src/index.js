@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-const mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0.qdyan.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,
     useCreateIndex: true
